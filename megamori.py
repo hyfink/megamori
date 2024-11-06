@@ -7,7 +7,7 @@ response = requests.get(url)
 
 # Initialize the rules dictionary for JSON and the content list for module
 rules = {
-    "version": 2,
+    "version": 1,
     "rules": [
         {
             "domain": [],
