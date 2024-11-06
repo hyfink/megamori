@@ -27,7 +27,7 @@ jobs:
     # Step 4: Convert AdGuard DNS Filter to SRS format
     - name: Convert AdGuard DNS Filter to megamori.srs
       run: |
-        sing-box rule-set convert --output megamori.srs megamori.json
+        sing-box rule-set compile --output megamori.srs megamori.json
 
     # Step 5: Check for changes and commit if necessary
     - name: Commit and Push SRS file
